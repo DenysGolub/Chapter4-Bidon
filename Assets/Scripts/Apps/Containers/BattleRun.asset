@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cc9bc70ab0d43d4d8fea1b0898b0362, type: 3}
+  m_Name: BattleRun
+  m_EditorClassIdentifier: 
+  title: Battle Run
+  description: Run, Forest, Run!
+  userRating: 4.2
+  icon: {fileID: 21300000, guid: 91cf515808b5eed449af019734eb8f8f, type: 3}
+  splashArt: {fileID: 21300000, guid: a56945be5bc90ce4f80084b789be0b12, type: 3}
+  downloads: 13809
+  developer: Forest
+  gameRating: 0
+  genres: 03000000

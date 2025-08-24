@@ -16,7 +16,7 @@ MonoBehaviour:
   description: 
   userRating: 3.5
   icon: {fileID: 21300000, guid: bbb0dabd41b134842b586e3aa2a212ae, type: 3}
-  splashArt: {fileID: 21300000, guid: 60162e22378a96e478e937e439f59d19, type: 3}
+  splashArt: {fileID: 21300000, guid: 2c3d93cd375aca64ca9446b266ed7bc3, type: 3}
   downloads: 100000
   developer: MihoYo
   gameRating: 0

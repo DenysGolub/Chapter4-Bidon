@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Tanks
   m_EditorClassIdentifier: 
   title: 'Tanks: Stars'
-  description: 
+  description: TANNNNNKSSSSSS
   userRating: 3.2
   icon: {fileID: 21300000, guid: ed987402a143a1441b97b1c6868f4d32, type: 3}
-  splashArt: {fileID: 21300000, guid: aafd6f87468475f4681523aeed623c5d, type: 3}
+  splashArt: {fileID: 21300000, guid: 66019cbbb1d5e514296423ac7249b679, type: 3}
   downloads: 10000
   developer: Playgendary
   gameRating: 0
