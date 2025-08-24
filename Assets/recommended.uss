@@ -1,0 +1,82 @@
+/* БАЗА */
+.section {
+    flex-direction: column;
+
+}
+
+.section-title {
+    /* базове значення, буде перекриватися брейкпоінтами */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: rgb(32, 33, 36);
+}
+
+.card-row {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;     /* перенос карток */
+}
+
+/* Відступи замість gap */
+.card {
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    min-width: 120px;    /* щоб не стискалося надміру */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* БАЗОВА сітка: ~3 у ряд, далі класи звузять/розширять */
+.card { 
+    text-align: center;
+}
+
+/* Вміст картки */
+.app-icon {
+    width: 440px;
+    height: 264px;
+    margin-bottom: 8px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+}
+
+.app-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(32, 33, 36);
+    margin-bottom: 2px;
+
+    unity-text-align: upper-left; 
+    white-space: normal;           
+}
+
+
+.app-subtitle {
+    font-size: 26px;
+    color: rgb(95, 99, 104);
+}
+
+/* ===== БРЕЙКПОІНТИ ЧЕРЕЗ КЛАСИ НА КОРЕНІ =====
+
+/* Мобілка: 2 картки в ряд */
+.root.mobile .card { width: 48%; min-width: 140px; }
+.root.mobile .section-title { font-size: 18px; }
+.root.mobile .app-icon { width: 56px; height: 56px; }
+.root.mobile .app-title { font-size: 13px; }
+.root.mobile .app-subtitle { font-size: 11px; }
+
+/* Планшет: 3 картки в ряд (трохи ширші) */
+.root.tablet .card { width: 31%; }
+.root.tablet .section-title { font-size: 20px; }
+.root.tablet .app-icon { width: 64px; height: 64px; }
+
+/* Десктоп: фіксована ширина картки або 4 в ряд (як зручно) */
+.root.desktop .card { width: 23%; min-width: 180px; }
+.root.desktop .section-title { font-size: 22px; }
+.root.desktop .app-icon { width: 72px; height: 72px; }
+.root.desktop .app-title { font-size: 15px; }
+.root.desktop .app-subtitle { font-size: 12px; } */

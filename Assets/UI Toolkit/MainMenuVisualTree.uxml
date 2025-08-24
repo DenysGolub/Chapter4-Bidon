@@ -1,0 +1,113 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/recommended.uss?fileID=7433441132597879392&amp;guid=28ab71b993db0694785bd1e01f24e117&amp;type=3#recommended" />
+    <Style src="project://database/Assets/header.uss?fileID=7433441132597879392&amp;guid=35248a284c1722643826f47f08af0f5e&amp;type=3#header" />
+    <ui:VisualElement name="Recommended" style="flex-grow: 1;">
+        <ui:VisualElement name="VisualElement" class="section" style="-unity-text-align: middle-center; justify-content: space-between; align-self: center; align-items: center;">
+            <ui:VisualElement name="Apps" class="card-row">
+                <ui:VisualElement data-source="project://database/Assets/Scripts/Apps/Containers/GenshinImpact.asset?fileID=11400000&amp;guid=ca92f03ec51dbf04f88ab339c5776a46&amp;type=2#GenshinImpact" class="card" style="align-items: center;">
+                    <ui:Image class="app-icon">
+                        <Bindings>
+                            <ui:DataBinding property="style.backgroundImage" data-source-path="splashArt" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Image>
+                    <ui:Label text="FocusFlow" enabled="true" double-click-selects-word="false" class="app-title">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="title" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                    <ui:Label text="Pomodoro timer • 4.7" name="Label" class="app-subtitle">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="userRating" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+                <ui:VisualElement data-source="project://database/Assets/Scripts/Apps/Containers/LOL_WR.asset?fileID=11400000&amp;guid=76b6db324ae775c44bb67ca92d267453&amp;type=2#LOL_WR" class="card" style="align-items: center;">
+                    <ui:Image class="app-icon">
+                        <Bindings>
+                            <ui:DataBinding property="style.backgroundImage" data-source-path="splashArt" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Image>
+                    <ui:Label text="FocusFlow" enabled="true" double-click-selects-word="false" class="app-title">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="title" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                    <ui:Label text="Pomodoro timer • 4.7" name="Label" class="app-subtitle">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="userRating" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+                <ui:VisualElement data-source="project://database/Assets/Scripts/Apps/Containers/Tanks.asset?fileID=11400000&amp;guid=965b51f6bd5e9a44aa8a37047f68f73b&amp;type=2#Tanks" class="card" style="align-items: center;">
+                    <ui:Image class="app-icon">
+                        <Bindings>
+                            <ui:DataBinding property="style.backgroundImage" data-source-path="splashArt" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Image>
+                    <ui:Label text="FocusFlow" enabled="true" double-click-selects-word="false" class="app-title">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="title" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                    <ui:Label text="Pomodoro timer • 4.7" name="Label" class="app-subtitle">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="userRating" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+                <ui:VisualElement data-source="project://database/Assets/Scripts/Apps/Containers/GenshinImpact.asset?fileID=11400000&amp;guid=ca92f03ec51dbf04f88ab339c5776a46&amp;type=2#GenshinImpact" class="card" style="align-items: center;">
+                    <ui:Image class="app-icon">
+                        <Bindings>
+                            <ui:DataBinding property="style.backgroundImage" data-source-path="splashArt" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Image>
+                    <ui:Label text="FocusFlow" enabled="true" double-click-selects-word="false" class="app-title">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="title" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                    <ui:Label text="Pomodoro timer • 4.7" name="Label" class="app-subtitle">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="userRating" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+                <ui:VisualElement data-source="project://database/Assets/Scripts/Apps/Containers/GenshinImpact.asset?fileID=11400000&amp;guid=ca92f03ec51dbf04f88ab339c5776a46&amp;type=2#GenshinImpact" class="card" style="align-items: center;">
+                    <ui:Image class="app-icon">
+                        <Bindings>
+                            <ui:DataBinding property="style.backgroundImage" data-source-path="splashArt" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Image>
+                    <ui:Label text="FocusFlow" enabled="true" double-click-selects-word="false" class="app-title">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="title" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                    <ui:Label text="Pomodoro timer • 4.7" name="Label" class="app-subtitle">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="userRating" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+                <ui:VisualElement data-source="project://database/Assets/Scripts/Apps/Containers/GenshinImpact.asset?fileID=11400000&amp;guid=ca92f03ec51dbf04f88ab339c5776a46&amp;type=2#GenshinImpact" class="card" style="align-items: center;">
+                    <ui:Image class="app-icon">
+                        <Bindings>
+                            <ui:DataBinding property="style.backgroundImage" data-source-path="splashArt" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Image>
+                    <ui:Label text="FocusFlow" enabled="true" double-click-selects-word="false" class="app-title">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="title" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                    <ui:Label text="Pomodoro timer • 4.7" name="Label" class="app-subtitle">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="userRating" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="Div3" style="flex-grow: 1; border-right-width: 186px;" />
+</ui:UXML>

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cc9bc70ab0d43d4d8fea1b0898b0362, type: 3}
+  m_Name: LOL_WR
+  m_EditorClassIdentifier: 
+  title: 'LOL: Wild Rift'
+  description: 
+  userRating: 4.2
+  icon: {fileID: 21300000, guid: f3a087907785ac94c8a66aa7430f2f31, type: 3}
+  splashArt: {fileID: 21300000, guid: f315b63d8840fb94189c5450b8639251, type: 3}
+  downloads: 250000
+  developer: Riot Games
+  gameRating: 2
+  genres: 0500000009000000
