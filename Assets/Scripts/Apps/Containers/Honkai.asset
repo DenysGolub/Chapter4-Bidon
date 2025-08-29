@@ -21,3 +21,7 @@ MonoBehaviour:
   developer: miHoYo
   gameRating: 2
   genres: 02000000
+  tempScreens:
+  - {fileID: 21300000, guid: 87125b093094e324eb0440e5b8b6d9b4, type: 3}
+  - {fileID: 21300000, guid: b4da13f17d1e02342801b15a02e39538, type: 3}
+  - {fileID: 21300000, guid: 28470be5005c0ab46849b4b8b5ba4929, type: 3}

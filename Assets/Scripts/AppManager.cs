@@ -1,16 +1,30 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class AppManager : MonoBehaviour
 {
-    public GameObject slotPrefab;
-    public List<AppSO> apps;
-    void Start()
+    public AppSO app;
+    public GameObject appPage;
+    public GameObject mainPage;
+
+
+    public void RedirectToAppPage()
     {
-        foreach (var app in apps)
-        {
-            slotPrefab.GetComponent<AppInfoSlot>().data = app;
-            Instantiate(slotPrefab, this.transform);
-        }   
+        mainPage.SetActive(false);
+        appPage.SetActive(true);
+
+        RaiseChanged();
+    }
+
+
+
+    public event Action<AppSO> OnChanged;
+
+    public void RaiseChanged()
+    {
+        OnChanged?.Invoke(app);
+        Debug.Log($"Sended + {app}");
     }
 }

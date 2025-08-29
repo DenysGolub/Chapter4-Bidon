@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GenshinImpact
   m_EditorClassIdentifier: 
   title: Genshin Impact
-  description: 
+  description: EXPLORE TEIVAT REGION TO FIND TOUR FAMILY
   userRating: 3.5
   icon: {fileID: 21300000, guid: bbb0dabd41b134842b586e3aa2a212ae, type: 3}
   splashArt: {fileID: 21300000, guid: 2c3d93cd375aca64ca9446b266ed7bc3, type: 3}
@@ -21,3 +21,7 @@ MonoBehaviour:
   developer: MihoYo
   gameRating: 0
   genres: 000000000200000005000000
+  tempScreens:
+  - {fileID: 21300000, guid: 54eb358d87d15834a883c6e5675609e4, type: 3}
+  - {fileID: 21300000, guid: eba3446c8cae2e149b11a30c3eee06fb, type: 3}
+  - {fileID: 21300000, guid: 05c26a8d5ac107f43ad7b5293e33d4db, type: 3}

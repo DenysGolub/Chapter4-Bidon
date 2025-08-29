@@ -21,3 +21,7 @@ MonoBehaviour:
   developer: Forest
   gameRating: 0
   genres: 03000000
+  tempScreens:
+  - {fileID: 21300000, guid: dd4720aab63e3774ba14a787f1f710a3, type: 3}
+  - {fileID: 21300000, guid: 2a52e812e3e547848bc428fd2d107d34, type: 3}
+  - {fileID: 21300000, guid: c51568569ed81564ca62c5ac62ffef5c, type: 3}

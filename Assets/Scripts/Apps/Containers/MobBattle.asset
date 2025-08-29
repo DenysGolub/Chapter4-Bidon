@@ -21,3 +21,7 @@ MonoBehaviour:
   developer: Some Company
   gameRating: 0
   genres: 07000000
+  tempScreens:
+  - {fileID: 21300000, guid: feec7dfbb982de647803e49f4cb4754c, type: 3}
+  - {fileID: 21300000, guid: aa0533626ad30534d833f2a33ccd5d78, type: 3}
+  - {fileID: 21300000, guid: cc91d6077745ec047b18265e1be2360b, type: 3}

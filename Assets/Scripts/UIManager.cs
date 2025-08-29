@@ -4,27 +4,12 @@ using UnityEngine.EventSystems;
 
 public class UIManager : MonoBehaviour
 {
-    public Animator sideMenuAnimator;
-
-    public void ShowAppPage()
+    public GameObject mainPage;
+    public GameObject appPage;
+    public void RedirectToMainPage()
     {
-        var btn = EventSystem.current.currentSelectedGameObject;
-
-        string appTitle = btn.GetComponentInChildren<TextMeshProUGUI>().text;
-        Debug.Log($"Selected app is {appTitle}");
-
-        //TODO: Make transition to app page
-    }
-
-
-    public void ShowSideMenu()
-    {
-        sideMenuAnimator.Play("SideMenuIn");
-    }
-
-    public void HideSideMenu()
-    {
-        sideMenuAnimator.Play("SideMenuOut");
+        mainPage.SetActive(true);
+        appPage.SetActive(false);
     }
 
 }

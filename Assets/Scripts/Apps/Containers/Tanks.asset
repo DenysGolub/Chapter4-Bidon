@@ -21,3 +21,7 @@ MonoBehaviour:
   developer: Playgendary
   gameRating: 0
   genres: 000000000300000004000000
+  tempScreens:
+  - {fileID: 21300000, guid: 7e140a3c7348160479bd81dff1c12dae, type: 3}
+  - {fileID: 21300000, guid: 33dde871d34bd36409bf1f696731fe8f, type: 3}
+  - {fileID: 21300000, guid: 66019cbbb1d5e514296423ac7249b679, type: 3}

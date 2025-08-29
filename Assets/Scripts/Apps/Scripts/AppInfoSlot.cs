@@ -8,6 +8,7 @@ public class AppInfoSlot : MonoBehaviour
     private Button btn;
     private TextMeshProUGUI[] titles;
     private Image splash;
+    public AppManager manager;
 
     void Awake()
     {
@@ -24,5 +25,22 @@ public class AppInfoSlot : MonoBehaviour
         titles[2].text = data.userRating.ToString();
         splash.sprite = data.splashArt;
 
+    }
+
+    void OnEnable()
+    {
+        btn.onClick.AddListener(OnAppClicked);
+        btn.onClick.AddListener(manager.RedirectToAppPage);
+    }
+    void OnDisable()
+    {
+        btn.onClick.RemoveListener(OnAppClicked);
+        btn.onClick.RemoveListener(manager.RedirectToAppPage);
+
+    }
+    public void OnAppClicked()
+    {
+        manager.app = GetComponentInParent<AppInfoSlot>().data;
+        Debug.Log(data);
     }
 }

@@ -5,35 +5,50 @@ public class ScreenManager : MonoBehaviour
     public GameObject landscapeLayout;
     public GameObject portraitLayout;
 
+    private bool lastIsLandscape;
+
     void Start()
     {
-        ChangeCanvas(); 
+        ApplyLayout();
     }
 
-    void Update()
+    void LateUpdate()
     {
-        ChangeCanvas();
-    }
+        bool isLandscape = DetectOrientation();
 
-    void ChangeCanvas()
-    {
-#if UNITY_EDITOR
-        bool isLandscape = Screen.width > Screen.height;
-#else
-        bool isLandscape = 
-            Input.deviceOrientation == DeviceOrientation.LandscapeLeft || 
-            Input.deviceOrientation == DeviceOrientation.LandscapeRight;
-#endif
-
-        if (isLandscape)
+        if (isLandscape != lastIsLandscape)
         {
-            landscapeLayout.SetActive(true);
-            portraitLayout.SetActive(false);
-        }
-        else
-        {
-            landscapeLayout.SetActive(false);
-            portraitLayout.SetActive(true);
+            ApplyLayout();
         }
     }
+
+    bool DetectOrientation()
+    {
+        switch (Input.deviceOrientation)
+        {
+            case DeviceOrientation.LandscapeLeft:
+            case DeviceOrientation.LandscapeRight:
+                return true;
+
+            case DeviceOrientation.Portrait:
+            case DeviceOrientation.PortraitUpsideDown:
+                return false;
+
+            default:
+                return Screen.width > Screen.height;
+        }
+    }
+
+    void ApplyLayout()
+    {
+        bool isLandscape = DetectOrientation();
+
+        landscapeLayout.SetActive(isLandscape);
+        portraitLayout.SetActive(!isLandscape);
+
+        lastIsLandscape = isLandscape;
+
+        Debug.Log($"[ScreenManager] Orientation: {Input.deviceOrientation}, Width: {Screen.width}, Height: {Screen.height}, Landscape: {isLandscape}");
+    }
+
 }

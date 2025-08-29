@@ -21,3 +21,7 @@ MonoBehaviour:
   developer: Riot Games
   gameRating: 0
   genres: 01000000
+  tempScreens:
+  - {fileID: 21300000, guid: 0095a5710b30d874aa16f88b7d2edd52, type: 3}
+  - {fileID: 21300000, guid: 4b063fc9139eef04f89c30b7955451b2, type: 3}
+  - {fileID: 21300000, guid: 9906944b962af3e4e8a0f0fc5964956b, type: 3}
