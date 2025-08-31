@@ -15,6 +15,7 @@ public class AppInfoSlot : MonoBehaviour
         btn = GetComponentInChildren<Button>();
         titles = GetComponentsInChildren<TextMeshProUGUI>();
         splash = GetComponentInChildren<Image>();
+        manager = FindFirstObjectByType<AppManager>(FindObjectsInactive.Include);
     }
 
     void Start()

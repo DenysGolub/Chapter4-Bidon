@@ -21,7 +21,7 @@ public class AppBinder : MonoBehaviour
 
     void Awake()
     {
-        appManager = transform.root.GetComponent<AppManager>();
+        appManager = FindAnyObjectByType<AppManager>();
     }
 
     void OnEnable()
