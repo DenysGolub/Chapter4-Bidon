@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: LOL_WR
   m_EditorClassIdentifier: 
   title: 'LOL: Wild Rift'
-  description: 
+  description: 'Dive into Wild Rift: the skills-and-strats 5v5 MOBA experience of
+    League of Legends, now built from the ground up for mobile.'
   userRating: 4.2
   icon: {fileID: 21300000, guid: f3a087907785ac94c8a66aa7430f2f31, type: 3}
   splashArt: {fileID: 21300000, guid: 4dcaa3fb335ec7341a86790081b541b1, type: 3}
