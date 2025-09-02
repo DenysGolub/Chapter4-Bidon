@@ -22,8 +22,12 @@ public class AppManager : MonoBehaviour
 
     public void RedirectToMainPage()
     {
-        animator.Rebind();
-        StartCoroutine(PlayAnimAndHidePage(appPage, "SlideOut"));
+        if (!mainPage.activeInHierarchy)
+        {
+            animator.Rebind();
+            StartCoroutine(PlayAnimAndHidePage(appPage, "SlideOut"));
+        }
+   
     }
 
     private IEnumerator PlayAnimAndHidePage(GameObject page, string animName)
