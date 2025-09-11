@@ -57,4 +57,21 @@ public class ChiScrollRect : ScrollRect, IPointerEnterHandler, IPointerExitHandl
     {
         return UnityEngine.Input.GetAxis(mouseScrollWheelAxis) != 0;
     }
+
+
+    public override void OnBeginDrag(PointerEventData eventData)
+    {
+        base.OnBeginDrag(eventData);
+    }
+
+    public override void OnDrag(PointerEventData eventData)
+    {
+        base.OnDrag(eventData);
+    }
+
+    public override void OnEndDrag(PointerEventData eventData)
+    {
+        base.OnEndDrag(eventData);
+    }
+
 }
